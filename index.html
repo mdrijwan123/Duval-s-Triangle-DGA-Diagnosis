@@ -1,0 +1,44 @@
+
+<html>
+    <head>
+        <style>
+            body{
+                background-color: ivory;
+                padding:10px;
+                margin: 0px;
+            }
+            #canvas{
+                border:1px solid red; margin:0 auto;
+            }
+            label{
+                position: relative;
+                left:1px;
+                right:2px;
+                width:40px;
+                height:20px;
+                border: 1px solid #73AD21;
+            }
+            button{
+              width: 100px;
+              height: 50px;
+              border: 1px solid #73AD21;
+            }
+            input{
+              position: relative;
+              left: 20px;
+              right: 40px;
+              width: 100px;
+              height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+            <canvas id="canvas" width=650 height=580 class="canvas"></canvas>
+            <script src=duval.js></script>
+            <pre textAlign="right" width="48" height="48">
+                    CH4 =  <input type="text" id="ch4" name="value1" value=""/>
+                    C2H2 = <input type="text" id="c2h2" name="value2" value=""/>         <button onClick="calcOpr()"> Calculate </button>
+                    C2H4 = <input type="text" id="c2h4" name="value3" value=""/>
+          </pre>
+    </body>
+</html>
