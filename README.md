@@ -15,3 +15,6 @@ The input fields are in form of :
 
 After entering the values for CH4,C2H2,C2H4 the point of intersection will be location based upon the % contribution of the particular 
 gases.
+![image](https://user-images.githubusercontent.com/35109373/46913721-1e0a8600-cfb0-11e8-8ae8-32a23e1f9cff.png)
+
+The resulting plot for the given inputs are:
