@@ -264,7 +264,7 @@ for (var i = 0; i < segments.length; i++) {
 // draw ticklines
 ticklines(v0, v1, 9, 0, 20);
 ticklines(v1, v2, 9, Math.PI * 3 / 4, 20);
-ticklines(v2, v0, 9, Math.PI * 5 / 4, 20);
+ticklines(v2, v0, 9, Math.PI * 4 / 3, 20);
 // molecules
 moleculeLabel(v0, v1, 100, Math.PI, '% CH4');
 moleculeLabel(v1, v2, 100, 0, '% C2H4');
