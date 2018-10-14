@@ -4,7 +4,7 @@ var ctx = canvas.getContext("2d");
 // https://www.researchgate.net/publication/4345236_A_Software_Implementation_of_the_Duval_Triangle_Method
 //To vary the point size of Dot
 var pointSize = 4.5;
-
+//The coordinates of sides of Triangle
 var v0 = {
   x: 114,
   y: 366
@@ -43,8 +43,9 @@ ctx.fillRect(50, 529, 20, 10);
 ctx.fillStyle = 'rgb(153,0,153)';
 ctx.fillRect(50, 544, 20, 10);
 ctx.fillStyle="black";
+//Diagnosis Result Label
 ctx.fillText("Diagnosis Result:",350,538,300);
-//TextFields for Gases:
+//Variable to store coordinates on canvas for each Gases:
 var ch4x, ch4y, c2h4x, c2h4y, c2h2x, c2h2y;
 // Define all your segments here
 var segments = [{
@@ -242,7 +243,7 @@ var arrowheadLength = 10;
 var arrowheadWidth = 8;
 var arrowhead = document.createElement('canvas');
 premakeArrowhead();
-
+//Declasing Lgeends name
 var legendTexts = ['PD = Partial Discharge',
   'T1 = Thermal fault < 300 celcius',
   'T2 = Thermal fault 300 < T < 700 celcius',
