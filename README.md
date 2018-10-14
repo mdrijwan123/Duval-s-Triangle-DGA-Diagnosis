@@ -18,3 +18,7 @@ gases.
 ![image](https://user-images.githubusercontent.com/35109373/46913721-1e0a8600-cfb0-11e8-8ae8-32a23e1f9cff.png)
 
 The resulting plot for the given inputs are:
+![image](https://user-images.githubusercontent.com/35109373/46913732-4e522480-cfb0-11e8-86d7-9ff441058bd8.png)
+
+Please notice as the intersecting point touches a perticular area color the resulting fault will automatically appear at the bottom.
+in Diagnosis result field.
