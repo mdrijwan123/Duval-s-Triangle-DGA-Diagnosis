@@ -1,6 +1,6 @@
 # Duval-s-Triangle-DGA-Diagnosis
 Monitoring and diagnosis of electrical equipment, in particular power transformers, has attracted considerable attention for many years. It is of great importance for the utilities to find the incipient faults in these transformers as early as possible. Dissolved gas analysis (DGA) is one of the most useful techniques to detect incipient faults in oil-filled power transformers. Various methods have been developed to interpret DGA results such as IEC ratio code, Rogers method and Duval triangle method. One of the most frequently used DGA methods is Duval triangular. It is a graphical method that allows one to follow the faults more easily and more precisely. 
-The data and ideas are taken from reserach gate publication:
+The data and ideas are taken from researach gate publication:
 https://www.researchgate.net/publication/4345236_A_Software_Implementation_of_the_Duval_Triangle_Method [accessed Oct 14 2018].
 
 I have used canvas HTML5 to create and design the Duval's Triangle for this project. The diagnosis will be done by taking the concentration values of for 3 key Gases CH4,C2H2,C2H4 and detect the fault in transformer.
