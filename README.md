@@ -11,11 +11,13 @@ The screenshot for the Duval's triangle is:
 
 The color represents which type of fault is in the transformer.
 The input fields are in form of :
-![image](https://user-images.githubusercontent.com/35109373/46913698-c79d4780-cfaf-11e8-95de-3f5e5d86527b.png)
+![image](https://user-images.githubusercontent.com/35109373/47176696-e2ffae00-d333-11e8-8d19-25a6d2b91b34.png)
+
 
 After entering the values for CH4,C2H2,C2H4 the point of intersection will be location based upon the % contribution of the particular 
 gases.
-![image](https://user-images.githubusercontent.com/35109373/46913721-1e0a8600-cfb0-11e8-8ae8-32a23e1f9cff.png)
+
+![image](https://user-images.githubusercontent.com/35109373/47176783-1c381e00-d334-11e8-87fb-c2c91463a55d.png)
 
 The resulting plot for the given inputs are:
 ![image](https://user-images.githubusercontent.com/35109373/46913732-4e522480-cfb0-11e8-86d7-9ff441058bd8.png)
