@@ -4,7 +4,7 @@ var ctx = canvas.getContext("2d");
 // https://www.researchgate.net/publication/4345236_A_Software_Implementation_of_the_Duval_Triangle_Method
 //To vary the point size of Dot
 var pointSize = 4.5;
-//The coordinates of sides of Triangle
+
 var v0 = {
   x: 114,
   y: 366
@@ -43,9 +43,8 @@ ctx.fillRect(50, 529, 20, 10);
 ctx.fillStyle = 'rgb(153,0,153)';
 ctx.fillRect(50, 544, 20, 10);
 ctx.fillStyle="black";
-//Diagnosis Result Label
 ctx.fillText("Diagnosis Result:",350,538,300);
-//Variable to store coordinates on canvas for each Gases:
+//TextFields for Gases:
 var ch4x, ch4y, c2h4x, c2h4y, c2h2x, c2h2y;
 // Define all your segments here
 var segments = [{
@@ -243,7 +242,7 @@ var arrowheadLength = 10;
 var arrowheadWidth = 8;
 var arrowhead = document.createElement('canvas');
 premakeArrowhead();
-//Declasing Lgeends name
+
 var legendTexts = ['PD = Partial Discharge',
   'T1 = Thermal fault < 300 celcius',
   'T2 = Thermal fault 300 < T < 700 celcius',
@@ -253,8 +252,10 @@ var legendTexts = ['PD = Partial Discharge',
   'DT = Electrical and Thermal'
 ];
 
+
 // start drawing
 /////////////////////
+
 
 // draw colored segments inside triangle
 for (var i = 0; i < segments.length; i++) {
@@ -263,7 +264,7 @@ for (var i = 0; i < segments.length; i++) {
 // draw ticklines
 ticklines(v0, v1, 9, 0, 20);
 ticklines(v1, v2, 9, Math.PI * 3 / 4, 20);
-ticklines(v2, v0, 9, Math.PI * 4 / 3, 20);
+ticklines(v2, v0, 9, Math.PI * 5 / 4, 20);
 // molecules
 moleculeLabel(v0, v1, 100, Math.PI, '% CH4');
 moleculeLabel(v1, v2, 100, 0, '% C2H4');
@@ -295,6 +296,7 @@ function drawSegment(s) {
     boxedLabel(s, labelfontsize, labelfontface, labelpadding);
   }
 }
+
 
 function moleculeLabel(start, end, offsetLength, angle, text) {
   ctx.textAlign = 'center';
@@ -437,7 +439,7 @@ function drawLegend(texts, x, y, lineheight) {
     ctx.fillText(texts[i], x, y + i * lineheight);
   }
 }
-//To draw Red Dot
+//Red Dot function
 function drawCoordinates(x, y) {
   ctx.fillStyle = "white"; // Red color
   ctx.beginPath();
@@ -538,7 +540,7 @@ function calcOpr() {
   var val3 = parseFloat(document.getElementById("c2h4").value);
   calcOprByValue(val1, val2, val3);
 }
-//Reflection of Right coordinates on c2h4, that reflection will be on c2h2 line
+
 function refRightCoordinates(c2h4_contr) {
   var dx = (v2.x - v0.x) * c2h4_contr;
   var coor_x = v0.x + dx;
@@ -548,7 +550,7 @@ function refRightCoordinates(c2h4_contr) {
     y: coor_y
   });
 }
-//Reflection of Right coordinates on ch4, that reflection will be on c2h4 line
+
 function refLeftCoordinates(ch4_contr) {
   var l = Math.sqrt(Math.pow((v2.x - v1.x), 2) + Math.pow((v2.y - v1.y), 2));
   var l_eff = l * ch4_contr;
@@ -564,6 +566,7 @@ function LeftCoordinates(ch4_contr) {
   var l_eff = l * ch4_contr;
   var coor_x = v0.x + l_eff * Math.cos(Math.PI / 3);
   var coor_y = v0.y - l_eff * Math.sin(Math.PI / 3);
+  //console.log(coor1_y);
   return ({
     x: coor_x,
     y: coor_y
@@ -590,7 +593,7 @@ function RightCoordinates(c2h4_contr) {
     y: coor_y
   });
 }
-//Intesection and get final coordinates 
+//Intesection and get Point
 function checkLineIntersection(line1StartX, line1StartY, line1EndX, line1EndY, line2StartX, line2StartY, line2EndX, line2EndY) {
   // if the lines intersect, the result contains the x and y of the intersection (treating the lines as infinite) and booleans for whether line segment 1 or line segment 2 contain the point
   var denominator, a, b, numerator1, numerator2, result = {
